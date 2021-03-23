@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Cursor;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -29,7 +30,7 @@ public class Intro extends ApplicationAdapter {
     gameOverTexture = new Texture("game_over.png");
 
     initialisationSprites();
-    initialiserJoueur();
+    //initialiserJoueur();
   }
 
   private void initialisationSprites() {
@@ -39,9 +40,9 @@ public class Intro extends ApplicationAdapter {
     }
   }
 
-  private void initialiserJoueur() {
-    joueur = new Joueur();
-  }
+  //private void initialiserJoueur() {
+    //joueur = new Joueur();
+  //}
 
   @Override
   public void render() {
@@ -53,7 +54,6 @@ public class Intro extends ApplicationAdapter {
       dessiner();
     }
   }
-
 
   private void reinitialiserArrierePlan() {
     Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
